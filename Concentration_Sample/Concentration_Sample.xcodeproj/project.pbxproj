@@ -15,6 +15,8 @@
 		73532B111A12CA8A0045D09E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73532B101A12CA8A0045D09E /* Images.xcassets */; };
 		73532B141A12CA8A0045D09E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73532B121A12CA8A0045D09E /* LaunchScreen.xib */; };
 		73532B201A12CA8A0045D09E /* Concentration_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B1F1A12CA8A0045D09E /* Concentration_SampleTests.m */; };
+		73532B2E1A12CEAB0045D09E /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B2B1A12CEAB0045D09E /* KAProgressLabel.m */; };
+		73532B2F1A12CEAB0045D09E /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B2D1A12CEAB0045D09E /* TPPropertyAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		73532B191A12CA8A0045D09E /* Concentration_SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Concentration_SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73532B1E1A12CA8A0045D09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73532B1F1A12CA8A0045D09E /* Concentration_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Concentration_SampleTests.m; sourceTree = "<group>"; };
+		73532B2A1A12CEAB0045D09E /* KAProgressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KAProgressLabel.h; path = KAProgressLabel/KAProgressLabel.h; sourceTree = SOURCE_ROOT; };
+		73532B2B1A12CEAB0045D09E /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = KAProgressLabel/KAProgressLabel.m; sourceTree = SOURCE_ROOT; };
+		73532B2C1A12CEAB0045D09E /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = KAProgressLabel/TPPropertyAnimation.h; sourceTree = SOURCE_ROOT; };
+		73532B2D1A12CEAB0045D09E /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = KAProgressLabel/TPPropertyAnimation.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,7 @@
 		73532AFF1A12CA8A0045D09E /* Concentration_Sample */ = {
 			isa = PBXGroup;
 			children = (
+				73532B291A12CE8A0045D09E /* KAProgressLabel */,
 				73532B041A12CA8A0045D09E /* AppDelegate.h */,
 				73532B051A12CA8A0045D09E /* AppDelegate.m */,
 				73532B0A1A12CA8A0045D09E /* ViewController.h */,
@@ -120,6 +127,17 @@
 				73532B1E1A12CA8A0045D09E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73532B291A12CE8A0045D09E /* KAProgressLabel */ = {
+			isa = PBXGroup;
+			children = (
+				73532B2A1A12CEAB0045D09E /* KAProgressLabel.h */,
+				73532B2B1A12CEAB0045D09E /* KAProgressLabel.m */,
+				73532B2C1A12CEAB0045D09E /* TPPropertyAnimation.h */,
+				73532B2D1A12CEAB0045D09E /* TPPropertyAnimation.m */,
+			);
+			name = KAProgressLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +243,9 @@
 				73532B061A12CA8A0045D09E /* AppDelegate.m in Sources */,
 				73532B091A12CA8A0045D09E /* Concentration_Sample.xcdatamodeld in Sources */,
 				73532B0C1A12CA8A0045D09E /* ViewController.m in Sources */,
+				73532B2F1A12CEAB0045D09E /* TPPropertyAnimation.m in Sources */,
 				73532B031A12CA8A0045D09E /* main.m in Sources */,
+				73532B2E1A12CEAB0045D09E /* KAProgressLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
