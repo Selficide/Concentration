@@ -17,6 +17,10 @@
 		73532B201A12CA8A0045D09E /* Concentration_SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B1F1A12CA8A0045D09E /* Concentration_SampleTests.m */; };
 		73532B2E1A12CEAB0045D09E /* KAProgressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B2B1A12CEAB0045D09E /* KAProgressLabel.m */; };
 		73532B2F1A12CEAB0045D09E /* TPPropertyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B2D1A12CEAB0045D09E /* TPPropertyAnimation.m */; };
+		73532B321A130A340045D09E /* Timer.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B311A130A340045D09E /* Timer.m */; };
+		73532B351A13515B0045D09E /* GameBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B341A13515B0045D09E /* GameBoard.m */; };
+		73532B3B1A1353870045D09E /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 73532B3A1A1353870045D09E /* Card.m */; };
+		73532B3D1A1354AF0045D09E /* Card.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73532B3C1A1354AF0045D09E /* Card.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,13 @@
 		73532B2B1A12CEAB0045D09E /* KAProgressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KAProgressLabel.m; path = KAProgressLabel/KAProgressLabel.m; sourceTree = SOURCE_ROOT; };
 		73532B2C1A12CEAB0045D09E /* TPPropertyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TPPropertyAnimation.h; path = KAProgressLabel/TPPropertyAnimation.h; sourceTree = SOURCE_ROOT; };
 		73532B2D1A12CEAB0045D09E /* TPPropertyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TPPropertyAnimation.m; path = KAProgressLabel/TPPropertyAnimation.m; sourceTree = SOURCE_ROOT; };
+		73532B301A130A340045D09E /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		73532B311A130A340045D09E /* Timer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Timer.m; sourceTree = "<group>"; };
+		73532B331A13515B0045D09E /* GameBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameBoard.h; sourceTree = "<group>"; };
+		73532B341A13515B0045D09E /* GameBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameBoard.m; sourceTree = "<group>"; };
+		73532B391A1353870045D09E /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		73532B3A1A1353870045D09E /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		73532B3C1A1354AF0045D09E /* Card.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +110,13 @@
 				73532B121A12CA8A0045D09E /* LaunchScreen.xib */,
 				73532B071A12CA8A0045D09E /* Concentration_Sample.xcdatamodeld */,
 				73532B001A12CA8A0045D09E /* Supporting Files */,
+				73532B301A130A340045D09E /* Timer.h */,
+				73532B311A130A340045D09E /* Timer.m */,
+				73532B331A13515B0045D09E /* GameBoard.h */,
+				73532B341A13515B0045D09E /* GameBoard.m */,
+				73532B391A1353870045D09E /* Card.h */,
+				73532B3A1A1353870045D09E /* Card.m */,
+				73532B3C1A1354AF0045D09E /* Card.xib */,
 			);
 			path = Concentration_Sample;
 			sourceTree = "<group>";
@@ -223,6 +241,7 @@
 				73532B0F1A12CA8A0045D09E /* Main.storyboard in Resources */,
 				73532B141A12CA8A0045D09E /* LaunchScreen.xib in Resources */,
 				73532B111A12CA8A0045D09E /* Images.xcassets in Resources */,
+				73532B3D1A1354AF0045D09E /* Card.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,12 +259,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73532B351A13515B0045D09E /* GameBoard.m in Sources */,
 				73532B061A12CA8A0045D09E /* AppDelegate.m in Sources */,
 				73532B091A12CA8A0045D09E /* Concentration_Sample.xcdatamodeld in Sources */,
 				73532B0C1A12CA8A0045D09E /* ViewController.m in Sources */,
 				73532B2F1A12CEAB0045D09E /* TPPropertyAnimation.m in Sources */,
+				73532B3B1A1353870045D09E /* Card.m in Sources */,
 				73532B031A12CA8A0045D09E /* main.m in Sources */,
 				73532B2E1A12CEAB0045D09E /* KAProgressLabel.m in Sources */,
+				73532B321A130A340045D09E /* Timer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

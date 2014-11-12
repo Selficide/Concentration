@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KAProgressLabel.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController  <UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, strong) IBOutlet UICollectionView* collectionView;
 
 @end
 

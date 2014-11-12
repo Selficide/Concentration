@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Card">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RFU-82-mGR">
+                    <rect key="frame" x="28" y="8" width="34" height="37"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="0Hv-vq-m1K">
+                    <rect key="frame" x="21" y="58" width="48" height="48"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RFU-82-mGR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="28" id="0cE-WZ-drI"/>
+                <constraint firstItem="0Hv-vq-m1K" firstAttribute="top" secondItem="RFU-82-mGR" secondAttribute="bottom" constant="13" id="3Ft-js-4cu"/>
+                <constraint firstAttribute="centerX" secondItem="0Hv-vq-m1K" secondAttribute="centerX" id="DBi-Hc-to3"/>
+                <constraint firstItem="0Hv-vq-m1K" firstAttribute="centerX" secondItem="RFU-82-mGR" secondAttribute="centerX" id="ESv-K2-bWS"/>
+                <constraint firstItem="0Hv-vq-m1K" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="Hx6-l4-Eyl"/>
+                <constraint firstAttribute="bottom" secondItem="0Hv-vq-m1K" secondAttribute="bottom" constant="4" id="bD7-R5-Cfe"/>
+                <constraint firstAttribute="trailing" secondItem="RFU-82-mGR" secondAttribute="trailing" constant="28" id="lkB-2R-RnQ"/>
+                <constraint firstAttribute="trailing" secondItem="0Hv-vq-m1K" secondAttribute="trailing" constant="21" id="pdR-CK-Ke0"/>
+                <constraint firstAttribute="centerX" secondItem="RFU-82-mGR" secondAttribute="centerX" id="t1D-NQ-IWL"/>
+                <constraint firstItem="RFU-82-mGR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="wee-ly-oiQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="suitImageView" destination="0Hv-vq-m1K" id="wqV-nR-uFG"/>
+                <outlet property="valueLabel" destination="RFU-82-mGR" id="yX0-fu-w13"/>
+            </connections>
+            <point key="canvasLocation" x="79" y="149"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart" width="64" height="64"/>
+    </resources>
+</document>
