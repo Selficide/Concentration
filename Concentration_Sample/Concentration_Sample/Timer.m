@@ -38,6 +38,7 @@
 
 - (void)setMaxSeconds:(unsigned int)maxSeconds {
     _maxSeconds = (maxSeconds < 1) ? 1 : maxSeconds;
+    [self.progressLabel setText:[NSString stringWithFormat:@"%u",self.maxSeconds]];
 }
 
 #pragma mark Timer methods
@@ -45,6 +46,14 @@
 - (void) start {
     //Timer setup
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerTick) userInfo:nil repeats:YES];
+}
+
+- (void) reset {
+    [self.progressLabel setText:[NSString stringWithFormat:@"%u",self.maxSeconds]];
+    [self.progressLabel setProgress:1.0f];
+    self.secondsPassed = 0;
+    [self.timer invalidate];
+    [self start];
 }
 
 #pragma mark Helper methods

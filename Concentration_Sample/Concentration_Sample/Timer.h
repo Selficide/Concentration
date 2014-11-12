@@ -15,4 +15,5 @@ typedef void (^TimerCompleted)();
 
 - (void)start;
 - (void)setMaxSeconds:(unsigned int)maxSeconds;
+- (void)reset;
 @end

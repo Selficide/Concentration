@@ -12,7 +12,8 @@ typedef enum {
     Heart,
     Diamond,
     Spade,
-    Club
+    Club,
+    Joker
 } CardSuit;
 
 @interface Card : UICollectionViewCell
@@ -24,6 +25,7 @@ typedef enum {
 
 @property (nonatomic, strong) IBOutlet UILabel* valueLabel;
 @property (nonatomic, strong) IBOutlet UIImageView* suitImageView;
+@property (nonatomic, strong) IBOutlet UIImageView* cardBackImageView;
 
 //Custom initializer for data
 - (id)initWithCardValue:(unsigned int)value cardSuit:(CardSuit)suit;

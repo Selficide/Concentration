@@ -60,6 +60,7 @@
             labelText = [NSString stringWithFormat:@"%u", value];
             break;
     }
+    self.valueLabel.text = labelText;
 }
 
 - (void) setSuit:(CardSuit)suit {
